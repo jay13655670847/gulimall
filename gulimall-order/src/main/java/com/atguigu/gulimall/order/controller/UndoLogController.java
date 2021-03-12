@@ -21,10 +21,11 @@ import com.atguigu.gulimall.common.utils.R;
  * 
  *
  * @author lj
- * @email lj@gmail.com
- * @date 2021-03-12 10:53:02
+ * @email 1347025837@qq.com
+ * @date 2021-03-12 20:25:31
  */
 @RestController
+@RequestMapping("order/undolog")
 public class UndoLogController {
     @Autowired
     private UndoLogService undoLogService;

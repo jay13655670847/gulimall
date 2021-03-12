@@ -21,10 +21,11 @@ import com.atguigu.gulimall.common.utils.R;
  * 首页轮播广告
  *
  * @author lj
- * @email lj@gmail.com
- * @date 2021-03-12 10:57:12
+ * @email 1347025837@qq.com
+ * @date 2021-03-12 20:22:15
  */
 @RestController
+@RequestMapping("coupon/homeadv")
 public class HomeAdvController {
     @Autowired
     private HomeAdvService homeAdvService;

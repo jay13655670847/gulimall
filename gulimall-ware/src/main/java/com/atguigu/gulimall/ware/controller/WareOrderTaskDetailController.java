@@ -21,10 +21,11 @@ import com.atguigu.gulimall.common.utils.R;
  * 库存工作单
  *
  * @author lj
- * @email lj@gmail.com
- * @date 2021-03-12 11:08:14
+ * @email 1347025837@qq.com
+ * @date 2021-03-12 20:28:10
  */
 @RestController
+@RequestMapping("ware/wareordertaskdetail")
 public class WareOrderTaskDetailController {
     @Autowired
     private WareOrderTaskDetailService wareOrderTaskDetailService;

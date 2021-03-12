@@ -21,10 +21,11 @@ import com.atguigu.gulimall.common.utils.R;
  * 商品阶梯价格
  *
  * @author lj
- * @email lj@gmail.com
- * @date 2021-03-12 10:57:12
+ * @email 1347025837@qq.com
+ * @date 2021-03-12 20:22:14
  */
 @RestController
+@RequestMapping("coupon/skuladder")
 public class SkuLadderController {
     @Autowired
     private SkuLadderService skuLadderService;

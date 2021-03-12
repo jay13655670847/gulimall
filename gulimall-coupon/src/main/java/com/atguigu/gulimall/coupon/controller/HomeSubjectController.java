@@ -21,10 +21,11 @@ import com.atguigu.gulimall.common.utils.R;
  * 首页专题表【jd首页下面很多专题，每个专题链接新的页面，展示专题商品信息】
  *
  * @author lj
- * @email lj@gmail.com
- * @date 2021-03-12 10:57:12
+ * @email 1347025837@qq.com
+ * @date 2021-03-12 20:22:15
  */
 @RestController
+@RequestMapping("coupon/homesubject")
 public class HomeSubjectController {
     @Autowired
     private HomeSubjectService homeSubjectService;

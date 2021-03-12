@@ -21,10 +21,11 @@ import com.atguigu.gulimall.common.utils.R;
  * sku图片
  *
  * @author lj
- * @email lj@gmail.com
- * @date 2021-03-12 11:04:06
+ * @email 1347025837@qq.com
+ * @date 2021-03-12 20:26:50
  */
 @RestController
+@RequestMapping("product/skuimages")
 public class SkuImagesController {
     @Autowired
     private SkuImagesService skuImagesService;

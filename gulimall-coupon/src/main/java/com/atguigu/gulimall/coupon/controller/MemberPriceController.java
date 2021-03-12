@@ -21,10 +21,11 @@ import com.atguigu.gulimall.common.utils.R;
  * 商品会员价格
  *
  * @author lj
- * @email lj@gmail.com
- * @date 2021-03-12 10:57:12
+ * @email 1347025837@qq.com
+ * @date 2021-03-12 20:22:15
  */
 @RestController
+@RequestMapping("coupon/memberprice")
 public class MemberPriceController {
     @Autowired
     private MemberPriceService memberPriceService;

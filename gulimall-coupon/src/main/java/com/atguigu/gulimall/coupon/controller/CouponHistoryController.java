@@ -21,10 +21,11 @@ import com.atguigu.gulimall.common.utils.R;
  * 优惠券领取历史记录
  *
  * @author lj
- * @email lj@gmail.com
- * @date 2021-03-12 10:57:13
+ * @email 1347025837@qq.com
+ * @date 2021-03-12 20:22:16
  */
 @RestController
+@RequestMapping("coupon/couponhistory")
 public class CouponHistoryController {
     @Autowired
     private CouponHistoryService couponHistoryService;

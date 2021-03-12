@@ -21,10 +21,11 @@ import com.atguigu.gulimall.common.utils.R;
  * 商品库存
  *
  * @author lj
- * @email lj@gmail.com
- * @date 2021-03-12 11:08:14
+ * @email 1347025837@qq.com
+ * @date 2021-03-12 20:28:09
  */
 @RestController
+@RequestMapping("ware/waresku")
 public class WareSkuController {
     @Autowired
     private WareSkuService wareSkuService;

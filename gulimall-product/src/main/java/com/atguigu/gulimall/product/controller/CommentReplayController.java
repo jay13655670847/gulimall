@@ -21,10 +21,11 @@ import com.atguigu.gulimall.common.utils.R;
  * 商品评价回复关系
  *
  * @author lj
- * @email lj@gmail.com
- * @date 2021-03-12 11:04:06
+ * @email 1347025837@qq.com
+ * @date 2021-03-12 20:26:51
  */
 @RestController
+@RequestMapping("product/commentreplay")
 public class CommentReplayController {
     @Autowired
     private CommentReplayService commentReplayService;

@@ -21,10 +21,11 @@ import com.atguigu.gulimall.common.utils.R;
  * 属性分组
  *
  * @author lj
- * @email lj@gmail.com
- * @date 2021-03-12 11:04:07
+ * @email 1347025837@qq.com
+ * @date 2021-03-12 20:26:51
  */
 @RestController
+@RequestMapping("product/attrgroup")
 public class AttrGroupController {
     @Autowired
     private AttrGroupService attrGroupService;

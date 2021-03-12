@@ -21,10 +21,11 @@ import com.atguigu.gulimall.common.utils.R;
  * 积分变化历史记录
  *
  * @author lj
- * @email lj@gmail.com
- * @date 2021-03-12 11:11:50
+ * @email 1347025837@qq.com
+ * @date 2021-03-12 20:24:09
  */
 @RestController
+@RequestMapping("member/integrationchangehistory")
 public class IntegrationChangeHistoryController {
     @Autowired
     private IntegrationChangeHistoryService integrationChangeHistoryService;

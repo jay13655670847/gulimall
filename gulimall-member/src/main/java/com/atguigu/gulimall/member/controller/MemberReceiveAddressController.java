@@ -21,10 +21,11 @@ import com.atguigu.gulimall.common.utils.R;
  * 会员收货地址
  *
  * @author lj
- * @email lj@gmail.com
- * @date 2021-03-12 11:11:49
+ * @email 1347025837@qq.com
+ * @date 2021-03-12 20:24:08
  */
 @RestController
+@RequestMapping("member/memberreceiveaddress")
 public class MemberReceiveAddressController {
     @Autowired
     private MemberReceiveAddressService memberReceiveAddressService;

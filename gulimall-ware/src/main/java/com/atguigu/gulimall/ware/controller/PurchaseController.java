@@ -21,10 +21,11 @@ import com.atguigu.gulimall.common.utils.R;
  * 采购信息
  *
  * @author lj
- * @email lj@gmail.com
- * @date 2021-03-12 11:08:14
+ * @email 1347025837@qq.com
+ * @date 2021-03-12 20:28:09
  */
 @RestController
+@RequestMapping("ware/purchase")
 public class PurchaseController {
     @Autowired
     private PurchaseService purchaseService;

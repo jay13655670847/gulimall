@@ -21,10 +21,11 @@ import com.atguigu.gulimall.common.utils.R;
  * 秒杀活动
  *
  * @author lj
- * @email lj@gmail.com
- * @date 2021-03-12 10:57:12
+ * @email 1347025837@qq.com
+ * @date 2021-03-12 20:22:15
  */
 @RestController
+@RequestMapping("coupon/seckillpromotion")
 public class SeckillPromotionController {
     @Autowired
     private SeckillPromotionService seckillPromotionService;

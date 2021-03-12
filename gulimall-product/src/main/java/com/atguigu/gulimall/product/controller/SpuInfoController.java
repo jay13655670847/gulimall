@@ -21,10 +21,11 @@ import com.atguigu.gulimall.common.utils.R;
  * spu信息
  *
  * @author lj
- * @email lj@gmail.com
- * @date 2021-03-12 11:04:06
+ * @email 1347025837@qq.com
+ * @date 2021-03-12 20:26:49
  */
 @RestController
+@RequestMapping("product/spuinfo")
 public class SpuInfoController {
     @Autowired
     private SpuInfoService spuInfoService;

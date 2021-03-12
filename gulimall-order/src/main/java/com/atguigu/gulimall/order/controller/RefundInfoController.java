@@ -21,10 +21,11 @@ import com.atguigu.gulimall.common.utils.R;
  * 退款信息
  *
  * @author lj
- * @email lj@gmail.com
- * @date 2021-03-12 10:53:02
+ * @email 1347025837@qq.com
+ * @date 2021-03-12 20:25:32
  */
 @RestController
+@RequestMapping("order/refundinfo")
 public class RefundInfoController {
     @Autowired
     private RefundInfoService refundInfoService;

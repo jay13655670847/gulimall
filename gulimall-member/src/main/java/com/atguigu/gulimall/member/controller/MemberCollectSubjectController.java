@@ -21,10 +21,11 @@ import com.atguigu.gulimall.common.utils.R;
  * 会员收藏的专题活动
  *
  * @author lj
- * @email lj@gmail.com
- * @date 2021-03-12 11:11:50
+ * @email 1347025837@qq.com
+ * @date 2021-03-12 20:24:09
  */
 @RestController
+@RequestMapping("member/membercollectsubject")
 public class MemberCollectSubjectController {
     @Autowired
     private MemberCollectSubjectService memberCollectSubjectService;

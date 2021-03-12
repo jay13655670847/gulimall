@@ -21,10 +21,11 @@ import com.atguigu.gulimall.common.utils.R;
  * 成长值变化历史记录
  *
  * @author lj
- * @email lj@gmail.com
- * @date 2021-03-12 11:11:50
+ * @email 1347025837@qq.com
+ * @date 2021-03-12 20:24:08
  */
 @RestController
+@RequestMapping("member/growthchangehistory")
 public class GrowthChangeHistoryController {
     @Autowired
     private GrowthChangeHistoryService growthChangeHistoryService;
