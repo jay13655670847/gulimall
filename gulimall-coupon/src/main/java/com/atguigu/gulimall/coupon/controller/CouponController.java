@@ -1,14 +1,14 @@
 package com.atguigu.gulimall.coupon.controller;
 
+import java.math.BigDecimal;
+import java.time.ZonedDateTime;
 import java.util.Arrays;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.web.bind.annotation.*;
 
 import com.atguigu.gulimall.coupon.entity.CouponEntity;
 import com.atguigu.gulimall.coupon.service.CouponService;
@@ -24,11 +24,32 @@ import com.atguigu.gulimall.common.utils.R;
  * @email 1347025837@qq.com
  * @date 2021-03-12 20:22:16
  */
+@RefreshScope
 @RestController
 @RequestMapping("coupon/coupon")
 public class CouponController {
     @Autowired
     private CouponService couponService;
+
+    @Value("${my.username}")
+    private String name;
+
+    @Value("${my.age}")
+    private String age;
+
+    @GetMapping("/getMyInfo")
+    public R getMyInfo(){
+        return R.ok().put(name,age);
+    }
+
+    @RequestMapping("/getCoupon")
+    public R getCoupon(){
+        CouponEntity couponEntity = new CouponEntity();
+        couponEntity.setCode("1111");
+        couponEntity.setAmount(new BigDecimal(100.00));
+        couponEntity.setCouponName("美团优惠券");
+        return R.ok().put("200",couponEntity.toString());
+    }
 
     /**
      * 列表

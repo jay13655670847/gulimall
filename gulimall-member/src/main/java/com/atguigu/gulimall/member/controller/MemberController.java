@@ -3,7 +3,9 @@ package com.atguigu.gulimall.member.controller;
 import java.util.Arrays;
 import java.util.Map;
 
+import com.atguigu.gulimall.member.feign.CouponFeignService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,6 +17,7 @@ import com.atguigu.gulimall.member.service.MemberService;
 import com.atguigu.gulimall.common.utils.PageUtils;
 import com.atguigu.gulimall.common.utils.R;
 
+import javax.annotation.Resource;
 
 
 /**
@@ -29,6 +32,15 @@ import com.atguigu.gulimall.common.utils.R;
 public class MemberController {
     @Autowired
     private MemberService memberService;
+
+
+    @Resource
+    private CouponFeignService couponFeignService;
+
+    @RequestMapping("/getCoupon")
+    public  R getCoupon(){
+        return couponFeignService.getCoupon();
+    }
 
     /**
      * 列表

@@ -1,0 +1,33 @@
+server:
+  port: 88
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 116.62.137.75:8848
+        namespace: 1895d82e-e13f-4e9c-ab8c-f72b7739e504
+    gateway:
+      routes:
+        - id: routes_baidu
+          uri: https://www.baidu.com
+          predicates:
+            - Path=/baidu
+          filters:
+            - RewritePath=/baidu(?<segment>/?.*), $\{segment}
+
+        - id: routes_qq
+          uri: http://localhost:88/test
+          predicates:
+            - Path=/hello
+          filters:
+            - RewritePath=/hello(?<segment>/?.*), $\{segment}
+
+        #将路径为Path=/api/**转发至后台管理
+        - id: admin_route
+          uri: lb://renren-fast
+          predicates:
+            - Path=/api/**
+          filters:
+            - RewritePath=/api/(?<segment>/?.*), /renren-fast/$\{segment}
+  application:
+    name: gulimall-gateway

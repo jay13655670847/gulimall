@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: gulimall-member
+          uri: http://127.0.0.1:8002
+          predicates:
+            - Path=/member/member/**
